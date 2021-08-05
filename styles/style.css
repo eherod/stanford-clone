@@ -3,3 +3,130 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    
+}
+
+label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1rem;
+}
+
+.fas{
+    diplay: block;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+   
+}
+
+
+.image-div{
+    width: 5rem;
+}
+
+.image-div img{
+    width: 100%;
+    padding-top: .2rem;
+}
+
+
+
+.wrapper{
+   
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-x: hidden;
+    
+   
+}
+
+.wrapper img{
+   object-fit: contain;
+   width: 66.5rem;
+   height: 100vh;
+   margin-right: 4rem;
+   
+   
+   
+  
+   
+   
+   
+   
+    
+}
+
+#toggler{
+    display: none;
+}
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0, .2);
+    
+
+}
+
+
+
+nav{
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 500ms ease-in-out 150ms;
+    
+
+}
+nav ul li{
+    list-style: none;
+    padding: .75rem;
+    width: 100%;
+    border: 1px solid rgba(0,0,0, .2);
+
+    
+}
+
+nav li a{
+    text-decoration: none;
+    color: inherit;
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;
+    
+    
+    
+    
+}
+
+.drop{
+    padding-left: 1.5rem;
+    width: 100%;
+}
+
+#toggler:checked ~ nav{
+    transform: scale(1, 1);
+}
+
+#toggler:checked ~ nav li a{
+    opacity: 1;
+    transition: opacity 500ms ease-in-out 500ms;
+    
+   
+    
+}

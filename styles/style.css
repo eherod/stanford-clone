@@ -331,11 +331,12 @@ nav li a{
     margin: 4rem auto 2rem auto;
 }
 
-.talk-bubble-wrapper h3{
+.talk-bubble-wrapper h3,
+.hands-wrapper h3{
     opacity: .7;
     letter-spacing: 2px;
-    margin: 2rem auto;
-    padding: 1rem;
+    margin: 2rem auto 0 auto;
+    padding: 0 1rem;
     text-align: center;
     line-height: 1.75;
 }
@@ -343,6 +344,116 @@ nav li a{
 .talk-bubble-img{
     text-align: center;
 }
+
+.talk-bubble-wrapper p,
+.hands-wrapper p{
+
+    font-size: 1rem;
+    padding: .8rem;
+    text-align: center;
+}
+
+.hands-wrapper{
+    text-align: center;
+    
+}
+
+.compass-section-3{
+    text-align: center;
+}
+
+.compass-section-3 h2{
+font-size: 2rem;
+padding-bottom: 1.5rem;
+
+
+}
+.compass-section-3 p{
+    padding: 0 2rem 3rem 2rem;
+}
+
+.map-div{
+    width: 100%;
+}
+
+.map{
+    width: 90%;
+    margin-right: 1rem;
+}
+
+.national-reach{
+    position: relative;
+    left: 3.5rem;
+    bottom: 5.1rem;
+    background-color: #000;
+    color: #fff;
+    width: 80%;
+    text-align: left;
+    padding-bottom: 1px;
+    
+}
+
+.national-reach h3{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    padding: 2rem 0 1rem 0;
+}
+
+.national-reach p{
+    margin: 0;
+    padding: 0;
+    margin-left: 2rem;
+}
+
+.national-reach p:nth-child(3){
+    font-size: .8rem;
+    margin-right: 2.5rem;
+}
+
+.national-reach p a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+.seattle{
+    font-weight: bold;
+}
+
+.seattle-pic-wrapper{
+    width: 90%;
+    margin: -2.5rem auto 0 auto;
+}
+
+.seattle-pic{
+    width: 100%;
+}
+
+.compass-section-4 h3{
+    display: inline-block;
+    position: relative;
+    bottom: 2.3rem;
+    left: 2rem;
+    background-color: white;
+    letter-spacing: 5px;
+    padding: .25rem;
+    font-size: 1.5rem;
+    
+
+    
+}
+
+.compass-section-4 p{
+    font-size: .9rem;
+    padding: 0 1.3rem;
+    margin-top: -2rem;
+
+}
+
+
+
+
+
+
 
 
 

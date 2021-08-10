@@ -7,14 +7,18 @@
 body{
     display: flex;
     flex-direction: column;
-    overflow-y: hidden;
+   
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
     
 }
+.home-body{
+    overflow-y: hidden;
+
+}
 
 label{
-    position: fixed;
+    position: absolute;
     display: block;
     top: 0;
     left: 0;
@@ -144,3 +148,346 @@ nav li a{
    
     
 }
+
+/* About Stephanie */
+
+
+.about-body{
+    font-family: 'Merriweather', serif;
+
+}
+
+.about-body p{
+    font-weight: 300;
+    font-size: .9rem;
+    margin: 1rem 1rem 0 1rem;
+    line-height: 2;
+    padding: .5rem;
+}
+
+.about-body p:last-child{
+    margin-bottom: 3rem;
+}
+.about-wrapper,
+.about-wrapper-felix{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.about-heading-steph{
+    
+    font-weight: 100;
+    font-size: 2.25rem;
+    padding: 6rem 6rem 4rem 4rem;
+    letter-spacing: 10px;
+}
+
+
+.steph-img-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    
+}
+
+.steph-img-wrapper img{
+
+    width: 90%;
+    
+}
+
+
+.steph-info {
+    margin-right: 3.8rem;
+}
+
+
+
+.steph-info h5,
+.felix-info h5,
+.matt-info h5{
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: .5rem 0;
+
+}
+.steph-info h6,
+.felix-info h6,
+.matt-info h6{
+    font-size: .9rem;
+    font-weight: 400;
+    padding-bottom: .25rem;
+    
+    
+
+}
+
+
+.steph-info p,
+.matt-info p{
+    padding: unset;
+    margin: unset;
+    line-height: unset;
+    padding-bottom: .25rem;
+
+}
+.steph-info span,
+.matt-info span {
+    display: inline-block;
+    position: relative;
+    font-weight: 300;
+    font-size: 1rem;
+    top: 1px;
+}
+
+/*about Matt */
+
+.about-heading-matt,
+.about-heading-felix{
+    
+    font-weight: 100;
+    font-size: 2.25rem;
+    padding: 2rem 0;
+    letter-spacing: 10px;
+}
+
+.matt-info{
+    margin-right: 6rem;
+}
+
+.felix-info{
+    
+    display: flex;
+    flex-direction: column;
+    margin-right: 14rem;
+    
+}
+.about-wrapper-felix p{
+    padding: unset;
+}
+
+/* COMPASS */
+
+.about-heading-compass{
+    
+    font-weight: 100;
+    font-size: 2.25rem;
+    padding: 4rem 2rem;
+    letter-spacing: 10px;
+}
+.compass-img-wrapper{
+    width: 90%;
+    height: 13rem;
+    overflow: hidden;
+    position: relative;
+   
+   
+}
+
+.compass-img-wrapper p{
+    color: white;
+    text-align: center;
+    padding: 0 2rem;
+    line-height: 1.5;
+}
+
+.compass-img-wrapper p:first-child{
+    margin-top: 3.5rem;
+    font-size: 1rem;
+}
+.compass-img-wrapper p:nth-child(2){
+   
+   font-size: .75rem;
+   opacity: .9;
+   
+}
+
+.compass-image{
+    width: 100%;
+    
+    position: absolute;
+    top: -110px;
+    object-fit: cover;
+    z-index: -1
+    
+}
+.compass-info{
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+.compass-info p{
+    font-weight: bolder;
+    opacity: .7
+}
+
+.compass-divider{
+    border-top: 2px solid rgba(0,0,0, .2);
+    padding: 1px;
+    width: 95%;
+    margin: 4rem auto 2rem auto;
+}
+
+.talk-bubble-wrapper h3{
+    opacity: .7;
+    letter-spacing: 2px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+    line-height: 1.75;
+}
+
+.talk-bubble-img{
+    text-align: center;
+}
+
+
+
+/*about animation */
+.animation{
+   
+    height: 3rem;
+    width: 100%;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    
+
+}
+
+.line1,.line2,.line3,.line4,.line5,.line6,.line7,.line8,.line9,
+.line10,.line11,.line12 {
+    
+    border-right: 1px dotted rgba(0,0,0, 1);
+    margin: .8rem;
+    height: 1rem;
+    
+    
+    
+    
+    
+}
+
+.line1{
+
+    animation: line-rotation1 3s ease-in-out infinite alternate;
+
+}
+.line2{
+    
+    animation: line-rotation2 3s ease-in-out 25ms infinite alternate;
+}
+.line3{
+    
+    animation: line-rotation3 3s ease-in-out 50ms infinite alternate;
+    
+}
+
+.line4{
+    
+    animation: line-rotation4 3s ease-in-out 60ms infinite alternate;
+    
+}
+.line5{
+    
+    animation: line-rotation5 3s ease-in-out 70ms infinite alternate;
+    
+}
+.line6{
+    
+    animation: line-rotation6 3s ease-in-out 80ms infinite alternate;
+    
+}
+.line7{
+    
+    animation: line-rotation7 3s ease-in-out 90ms infinite alternate;
+    
+}
+.line8{
+    
+    animation: line-rotation8 3s ease-in-out 100ms infinite alternate;
+    
+}
+.line9{
+    
+    animation: line-rotation9 3s ease-in-out 200ms infinite alternate;
+    
+}
+.line10{
+    
+    animation: line-rotation10 3s ease-in-out 300ms infinite alternate;
+    
+}
+.line11{
+    
+    animation: line-rotation11 3s ease-in-out 400ms infinite alternate;
+    
+}
+.line12{
+    
+    animation: line-rotation12 3s ease-in-out 500ms infinite alternate;
+    
+}
+
+
+@keyframes line-rotation1{
+
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(80deg)}
+
+}
+
+@keyframes line-rotation2{
+    0%{transform: rotate(-30deg)}
+    100%{transform: rotate(75deg)}
+}
+
+@keyframes line-rotation3{
+    0%{transform: rotate(-35deg)}
+    100%{transform: rotate(70deg)}
+}
+@keyframes line-rotation4{
+    0%{transform: rotate(-40deg)}
+    100%{transform: rotate(65deg)}
+}
+@keyframes line-rotation5{
+    0%{transform: rotate(-45deg)}
+    100%{transform: rotate(60deg)}
+}
+@keyframes line-rotation6{
+    0%{transform: rotate(-50deg)}
+    100%{transform: rotate(55deg)}
+}
+@keyframes line-rotation7{
+    0%{transform: rotate(-55deg)}
+    100%{transform: rotate(50deg)}
+}
+@keyframes line-rotation8{
+    0%{transform: rotate(-60deg)}
+    100%{transform: rotate(45deg)}
+}
+@keyframes line-rotation9{
+    0%{transform: rotate(-65deg)}
+    100%{transform: rotate(40deg)}
+}
+@keyframes line-rotation10{
+    0%{transform: rotate(-70deg)}
+    100%{transform: rotate(35deg)}
+}
+@keyframes line-rotation11{
+    0%{transform: rotate(-75deg)}
+    100%{transform: rotate(30deg)}
+}
+@keyframes line-rotation12{
+    0%{transform: rotate(-85deg)}
+    100%{transform: rotate(0deg)}
+}
+
+
+
+
+

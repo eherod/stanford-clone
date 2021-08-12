@@ -94,11 +94,14 @@ nav{
     top: 3rem;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background-color: #fff;
     transform: scale(1, 0);
     transform-origin: top;
     transition: transform 500ms ease-in-out 150ms;
+    z-index: 999;
+    
+
     
 
 }
@@ -129,7 +132,10 @@ nav li a{
 
 #toggler:checked ~ nav{
     transform: scale(1, 1);
+   
 }
+
+
 
 #toggler:checked ~ nav li a{
     opacity: 1;
@@ -149,7 +155,7 @@ nav li a{
     
 }
 
-/* About Stephanie */
+/* About Pages: Stephanie, Matt, and Felix */
 
 
 .about-body{
@@ -169,7 +175,7 @@ nav li a{
     margin-bottom: 3rem;
 }
 .about-wrapper,
-.about-wrapper-felix{
+.transaction-wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -186,7 +192,10 @@ nav li a{
 }
 
 
-.steph-img-wrapper{
+.steph-img-wrapper,
+.matt-img-wrapper,
+.felix-img-wrapper,
+.testimonial-img-wrapper{
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
@@ -243,7 +252,7 @@ nav li a{
     top: 1px;
 }
 
-/*about Matt */
+
 
 .about-heading-matt,
 .about-heading-felix{
@@ -705,6 +714,107 @@ button:hover{
 .recent-sold-img{
     width: 100%;
 }
+
+
+
+/* contact */
+
+.contact-heading{
+    padding: 4rem 1.5rem;
+    letter-spacing: 10px;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    margin-right: 4rem;
+}
+.map-wrap{
+    width: 90%
+
+}
+#map{
+    height: 250px;
+    width: 100%;
+}
+
+.get-in-touch{
+    margin-top: 2rem;
+    
+   
+}
+.get-in-touch p{
+    margin: 0;
+}
+
+.contact-intro,
+.contact-steph,
+.contact-matt{
+    margin: 0 1.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contact-intro h6,
+.contact-steph h6,
+.contact-matt h6 {
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.contact-intro p{
+   
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.contact-steph,
+.contact-matt {
+    line-height: 2;
+
+}
+
+.stanford-logo-contact{
+    width: 90%;
+}
+
+.logo-img{
+    width: 100%;
+}
+
+.subject-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.subject-wrapper label{
+    color:rgba(0,0,0, .5);
+    letter-spacing: 2px;
+    padding: .5rem;
+}
+
+#subject{
+    padding: .5rem;
+    width: 92%;
+    align-self: center;
+    margin-right: .45rem;
+}
+
+.message-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding-left: .7rem;
+    margin-bottom: 2rem;
+
+}
+
+.message-wrapper label{
+    color:rgba(0,0,0, .5);
+    letter-spacing: 2px;
+    padding: .5rem 0;
+
+}
+
+
 
 
 

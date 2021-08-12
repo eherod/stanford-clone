@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Merriweather:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script src="https://kit.fontawesome.com/bf01176de7.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body class="about-body">
+
+    <header>
+        <input type="checkbox" id="toggler">
+        <label class="toggle-label" for="toggler"><span><i class="fas fa-bars"></i></span></label>
+        <div class="image-div"><img src="images/SG_Logo_RGB_Monogram+Type_Horiz_Black.png" alt="" class="logo"></div>
+
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="about-steph.html">About</a></li>
+                <ul>
+                    <li class="drop"><a href="about-steph.html">About Stephanie</a></li>
+                    <li class="drop"><a href="about-matt.html">About Matt</a></li>
+                    <li class="drop"><a href="about-felix.html">About Felix</a></li>
+                </ul>
+
+                <li><a href="about-compass.html">Compass</a> </li>
+                <ul>
+                    <li class="drop"><a href="about-compass.html">About Compass</a></li>
+                    <li class="drop"><a href="concierge.html">Concierge</a></li>
+                </ul>
+
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="transactions.html">Transactions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="social-icons">
+
+                <i class="fab fa-instagram fa-lg"></i>
+                <i class="fab fa-linkedin-in fa-lg"></i>
+                <i class="fab fa-facebook-f fa-lg"></i>
+
+
+
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="about-wrapper">
+
+        <h1 class="contact-heading">CONTACT</h1>
+
+
+
+
+
+
+        <div class="map-wrap">
+
+
+
+            <div id="map"></div>
+        </div>
+
+        <section class="get-in-touch">
+
+            <div class="contact-intro">
+                <h6>Get in touch</h6>
+
+                <p>Fill out the form here or contact us using the details below.</p>
+
+                <p> - </p>
+            </div>
+            <div class="contact-steph">
+                <h6>Stepanie Stanford</h6>
+                <p>stephanie@stanfordgroupseattle.com</p>
+                <p>206.334.6761</p>
+
+            </div>
+            <div class="contact-matt">
+                <h6>Matt Stanford</h6>
+                <p>matt@stanfordgroupseattle.com</p>
+                <p>206.334.6760</p>
+
+            </div>
+
+
+
+        </section>
+
+        <div class="stanford-logo-contact">
+            <img src="https://images.squarespace-cdn.com/content/v1/5dad311230eb5203e26c84c2/1571635372853-QZJPAKGB3DT906MOFWZ8/SG_Logo_RGB_Monogram%2BType_Vert_Black.png"
+                alt="" class="logo-img">
+        </div>
+
+
+
+
+        <form action="" class="form">
+            <div class="name">
+
+                <label class="name-label">Name *</label>
+
+                <div class="first-last">
+                    <input type="text" id="first-name">
+                    <input type="text" id="last-name"><br>
+                    <label class="first-name-label" for="first-name">First Name</label>
+                    <label class="last-name-label" for="last-name">Last Name</label>
+                </div>
+            </div>
+            <div class="email">
+                <label class="email-label" for="email">Email Address *</label>
+                <input type="email" id="email">
+            </div>
+
+
+            <div class="subject-wrapper">
+                <label for="subject">Subject *</label>
+                <input type="text" id="subject">
+            </div>
+
+            <div class="message-wrapper">
+                <label for="message">Message *</label>
+                <textarea name="message" id="message" cols="30" rows="8"></textarea>
+            </div>
+
+    </div>
+
+
+    <button>SUBMIT</button>
+
+
+    </form>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <script>
+
+        function initMap() {
+            var options = {
+                zoom: 8,
+                center: { lat: 47.6233698, lng: -122.338793 }
+
+            }
+
+            var map = new google.maps.Map(document.getElementById('map'), options);
+
+            var marker = new google.maps.Marker({
+                position: { lat: 47.6233698, lng: -122.338793 },
+                map: map
+            });
+
+        }
+    </script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkQcnYS7jkXVtNx4LNKYPN5ww9YBiZSSA&callback=initMap">
+        </script>
+
+</body>
+
+</html>

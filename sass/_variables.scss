@@ -1,0 +1,14 @@
+@mixin nav-link-style{
+    text-decoration: none;
+    color: inherit;
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;
+
+}
+
+@mixin nav-drop-styles {
+    list-style: none;
+    padding: .75rem .75rem .75rem 1.5rem;
+    width: 100%;
+    border: 1px solid rgba(0,0,0, .2);
+}

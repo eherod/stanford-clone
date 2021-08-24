@@ -1,0 +1,156 @@
+@import 'reset';
+@import 'variables';
+
+
+
+
+// Home page
+
+.home-body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    overflow: hidden;
+   
+    
+}
+
+// Header and Nav
+.home-header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0, .2);
+
+    &__input{
+        display: none;
+    }
+
+    &__input:checked ~ nav{
+        transform: scale(1, 1);
+       
+    }
+
+    &__input:checked ~ nav li a{
+        opacity: 1;
+        transition: opacity 500ms ease-in-out 500ms; 
+        
+    }
+
+    &__toggle-label{
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        padding: 1rem;
+    }
+    
+    &__image-div{
+        width: 5rem;
+
+        .home-header__image-logo{
+            width: 100%;
+            padding-top: .2rem;
+        }
+        
+    }
+    
+
+}
+
+
+.home__nav{
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    width: 100%;
+    height: 120vh;
+    background-color: #fff;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 500ms ease-in-out 150ms;
+    z-index: 999;
+
+    .home-nav__li{
+        list-style: none;
+        padding: .75rem;
+        width: 100%;
+        border: 1px solid rgba(0,0,0, .2);
+        
+    }
+
+    .home-nav-li__a{
+        @include nav-link-style;
+        
+    }   
+
+}
+
+.home-nav__li-about-drop{
+    
+    @include nav-drop-styles;
+    
+
+    .home-nav-li-about-drop__a{
+
+        @include nav-link-style;
+    
+    }
+}
+
+.home-nav__li-compass-drop{
+    @include nav-drop-styles;
+
+    .home-nav-li-compass-drop__a{
+
+        @include nav-link-style;
+
+    }
+
+}
+
+.social-icons{
+    padding: 1rem;
+    border: 1px solid rgba(0,0,0, .2);
+
+    .social-icons__a {
+        color: inherit;
+
+        .fab {
+            opacity: .3;
+            margin-right: .5rem;
+           
+            
+        }
+
+        .fas{
+            height: 3rem;
+           
+        }
+        
+    }
+}
+
+.home-wrapper{
+   
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-x: hidden;
+
+
+    &__pic{
+        object-fit: contain;
+        width: 66.5rem;
+        height: 100vh;
+        margin-right: 4rem;  
+     }
+    
+   
+}
+
+

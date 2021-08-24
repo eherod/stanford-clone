@@ -1,0 +1,22 @@
+{
+  "name": "stanford-clone",
+  "version": "1.0.0",
+  "description": "A clone of a real estate site",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss styles/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eherod/stanford-clone.git"
+  },
+  "author": "Eric Herod",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eherod/stanford-clone/issues"
+  },
+  "homepage": "https://github.com/eherod/stanford-clone#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

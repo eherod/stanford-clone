@@ -1,0 +1,1 @@
+This is a clone of a live real estate website. I am building this to practice CSS skills. Specifically animated drop down navigation, SASS, and BEM.

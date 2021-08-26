@@ -1,0 +1,146 @@
+
+
+.hm-bd{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    overflow: hidden;
+   
+    
+}
+
+
+// Header and Nav
+.hm-hd{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0, .2);
+
+    &__input{
+        display: none;
+
+        
+        
+    }
+
+    &__input:checked ~ nav{
+        transform: scale(1, 1);
+       
+    }
+
+    &__input:checked ~ nav li a{
+        opacity: 1;
+        transition: opacity 500ms ease-in-out 500ms; 
+        
+    }
+
+    &__toggle-label{
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        padding: 1rem;
+    }
+
+    &__logo-div{
+        width: 5rem;
+
+        
+        
+    }
+    &__logo{
+        width: 100%;
+        padding-top: .2rem;
+    }
+    
+}
+
+
+.hm-nav{
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    width: 100%;
+    height: 120vh;
+    background-color: #fff;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 500ms ease-in-out 150ms;
+    z-index: 999;
+
+    
+
+    
+
+}
+
+.hm-nav__li{
+    list-style: none;
+    padding: .75rem;
+    width: 100%;
+    border: 1px solid rgba(0,0,0, .2);
+    
+}
+
+.hm-nav-li__a{
+    @include nav-link-style;
+    
+}  
+
+.hm-nav__li-drop{
+    
+    @include nav-drop-styles;
+    
+
+    .hm-nav-li-drop__a{
+
+        @include nav-link-style;
+    
+    }
+}
+
+
+
+.hm-social-icons{
+    padding: 1rem;
+    border: 1px solid rgba(0,0,0, .2);
+
+    .hm-social-icons__a {
+        color: inherit;
+
+        .fab {
+            opacity: .3;
+            margin-right: .5rem;  
+        }
+
+        .fas{
+            height: 3rem;
+            
+            
+        }
+        
+    }
+}
+
+.hm-wrapper{
+   
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-x: hidden;
+
+
+    &__pic{
+        object-fit: contain;
+        width: 66.5rem;
+        height: 100vh;
+        margin-right: 4rem;  
+     }
+    
+   
+}

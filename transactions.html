@@ -15,49 +15,98 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="transactions-body">
 
-    <header>
-        <input type="checkbox" id="toggler">
-        <label class="toggle-label" for="toggler"><span><i class="fas fa-bars"></i></span></label>
-        <div class="image-div"><img src="images/SG_Logo_RGB_Monogram+Type_Horiz_Black.png" alt="" class="logo"></div>
+    <header class="transactions-hd">
+
+        <input type="checkbox" id="toggler" class="transactions-hd__input">
+
+        <label class="transactions-hd__toggle-label" for="toggler">
+            <span><i class="fas fa-bars transactions-hd__burger"></i></span>
+        </label>
+
+        <div class="transactions-hd__logo-div">
+            <img src="images/SG_Logo_RGB_Monogram+Type_Horiz_Black.png" alt="" class="transactions-hd__logo">
+        </div>
 
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a> </li>
-                <li><a href="about-steph.html">About</a></li>
-                <ul>
-                    <li class="drop"><a href="about-steph.html">About Stephanie</a></li>
-                    <li class="drop"><a href="about-matt.html">About Matt</a></li>
-                    <li class="drop"><a href="about-felix.html">About Felix</a></li>
+        <nav class="transactions-nav">
+
+            <ul class="transactions-nav__ul">
+
+                <li class="transactions-nav__li">
+                    <a class="transactions-nav-li__a" href="index.html">Home</a>
+                </li>
+
+                <li class="transactions-nav__li">
+                    <a class="transactions-nav-li__a" href="about-steph.html">About</a>
+                </li>
+
+                <ul class="transactions-nav__ul-drop">
+
+                    <li class="transactions-nav__li-drop">
+                        <a class="transactions-nav-li-drop__a" href="about-steph.html">About Stephanie</a>
+                    </li>
+
+                    <li class="transactions-nav__li-drop">
+                        <a class="transactions-nav-li-drop__a" href="about-matt.html">About Matt</a>
+                    </li>
+
+                    <li class="transactions-nav__li-drop">
+                        <a class="transactions-nav-li-drop__a" href="about-felix.html">About Felix</a>
+                    </li>
+
                 </ul>
 
-                <li><a href="about-compass.html">Compass</a> </li>
-                <ul>
-                    <li class="drop"><a href="about-compass.html">About Compass</a></li>
-                    <li class="drop"><a href="concierge.html">Concierge</a></li>
+                <li class="transactions-nav__li">
+                    <a class="transactions-nav-li__a" href="about-compass.html">Compass</a>
+                </li>
+
+                <ul class="transactions-nav__ul-drop">
+
+                    <li class="transactions-nav__li-drop">
+                        <a class="transactions-nav-li-drop__a" href="about-compass.html">About Compass
+                        </a>
+                    </li>
+
+                    <li class="transactions-nav__li-drop">
+                        <a class="transactions-nav-li-drop__a" href="concierge.html">Concierge
+                        </a>
+                    </li>
+
                 </ul>
 
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="transactions.html">Transactions</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li class="transactions-nav__li">
+                    <a class="transactions-nav-li__a" href="testimonials.html">Testimonials</a>
+                </li>
+
+                <li class="transactions-nav__li"><a class="transactions-nav-li__a"
+                        href="transactions.html">Transactions</a>
+                </li>
+
+                <li class="transactions-nav__li">
+                    <a class="transactions-nav-li__a" href="contact.html">Contact</a>
+                </li>
             </ul>
 
+            <div class="transactions-social-icons">
 
+                <a class="transactions-social-icons__a" href="https://www.instagram.com/stephstanford_stanfordgroup/"
+                    target=_blank>
 
-            <div class="social-icons">
-
-                <a href="https://www.instagram.com/stephstanford_stanfordgroup/" target=_blank>
-                    <i class="fab fa-instagram fa-lg">
+                    <i class="fab fa-instagram fa-lg transactions-social-icons__icon">
                     </i>
+
                 </a>
 
-                <a href="https://www.linkedin.com/in/stephanie-stanford-0429/" target=_blank>
-                    <i class="fab fa-linkedin-in fa-lg"></i></a>
+                <a class="transactions-social-icons__a" href="https://www.linkedin.com/in/stephanie-stanford-0429/"
+                    target=_blank>
 
-                <a href="https://www.facebook.com/stanfordgroupseattle" target=_blank>
-                    <i class="fab fa-facebook-f fa-lg"></i></a>
+                    <i class="fab fa-linkedin-in fa-lg transactions-social-icons__icon"></i></a>
+
+                <a class="transactions-social-icons__a" href="https://www.facebook.com/stanfordgroupseattle"
+                    target=_blank>
+                    <i class="fab fa-facebook-f fa-lg transactions-social-icons__icon"></i></a>
 
 
 
@@ -68,27 +117,27 @@
 
     <div class="transaction-wrapper">
 
-        <h1 class="transaction-heading">TRANSACTIONS</h1>
+        <h1 class="transaction-wrapper__h1">TRANSACTIONS</h1>
 
-        <div class="animation">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-            <div class="line4"></div>
-            <div class="line5"></div>
-            <div class="line6"></div>
-            <div class="line7"></div>
-            <div class="line8"></div>
-            <div class="line9"></div>
-            <div class="line10"></div>
-            <div class="line11"></div>
-            <div class="line12"></div>
+        <div class="transaction-animation">
+            <div class="transaction-animation__line1"></div>
+            <div class="transaction-animation__line2"></div>
+            <div class="transaction-animation__line3"></div>
+            <div class="transaction-animation__line4"></div>
+            <div class="transaction-animation__line5"></div>
+            <div class="transaction-animation__line6"></div>
+            <div class="transaction-animation__line7"></div>
+            <div class="transaction-animation__line8"></div>
+            <div class="transaction-animation__line9"></div>
+            <div class="transaction-animation__line10"></div>
+            <div class="transaction-animation__line11"></div>
+            <div class="transaction-animation__line12"></div>
         </div>
 
-        <h2 class="transaction-secondary-heading">Recent Closed Transactions</h2>
+        <h2 class="transaction-wrapper__h2">Recent Closed Transactions</h2>
 
-        <div class="recent-sold-wrap">
+        <div class="recent-sold">
 
             <img src="https://images.squarespace-cdn.com/content/v1/5dad311230eb5203e26c84c2/1596673389037-8FXS8EIAPPZELRH2XQND/Recent_Sold.jpg"
-                alt="" class="recent-sold-img">
+                alt="" class="recent-sold__img">
         </div>

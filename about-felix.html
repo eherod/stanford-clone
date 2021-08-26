@@ -15,47 +15,96 @@
     <title>Document</title>
 </head>
 
-<body class="about-body">
+<body class="abf-body">
 
-    <header>
-        <input type="checkbox" id="toggler">
-        <label class="toggle-label" for="toggler"><span><i class="fas fa-bars"></i></span></label>
-        <div class="image-div"><img src="images/SG_Logo_RGB_Monogram+Type_Horiz_Black.png" alt="" class="logo"></div>
+    <header class="abf-hd">
+
+        <input type="checkbox" id="toggler" class="abf-hd__input">
+
+        <label class="abf-hd__toggle-label" for="toggler">
+            <span><i class="fas fa-bars abf-hd__burger"></i></span>
+        </label>
+
+        <div class="abf-hd__logo-div">
+            <img src="images/SG_Logo_RGB_Monogram+Type_Horiz_Black.png" alt="" class="abf-hd__logo">
+        </div>
 
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a> </li>
-                <li><a href="about-steph.html">About</a></li>
-                <ul>
-                    <li class="drop"><a href="about-steph.html">About Stephanie</a></li>
-                    <li class="drop"><a href="about-matt.html">About Matt</a></li>
-                    <li class="drop"><a href="about-felix.html">About Felix</a></li>
+        <nav class="abf-nav">
+
+            <ul class="abf-nav__ul">
+
+                <li class="abf-nav__li">
+                    <a class="abf-nav-li__a href=" index.html">Home</a>
+                </li>
+
+                <li class="abf-nav__li">
+                    <a class="abf-nav-li__a" href="about-steph.html">About</a>
+                </li>
+
+                <ul class="abf-nav__ul-drop">
+
+                    <li class="abf-nav__li-drop">
+                        <a class="abf-nav-li-drop__a" href="about-steph.html">About Stephanie</a>
+                    </li>
+
+                    <li class="abf-nav__li-drop">
+                        <a class="abf-nav-li-drop__a" href="about-matt.html">About Matt</a>
+                    </li>
+
+                    <li class="abf-nav__li-drop">
+                        <a class="abf-nav-li-drop__a" href="about-felix.html">About Felix</a>
+                    </li>
+
                 </ul>
 
-                <li><a href="about-compass.html">Compass</a> </li>
-                <ul>
-                    <li class="drop"><a href="about-compass.html">About Compass</a></li>
-                    <li class="drop"><a href="concierge.html">Concierge</a></li>
+                <li class="abf-nav__li">
+                    <a class="abf-nav-li__a" href="about-compass.html">Compass</a>
+                </li>
+
+                <ul class="abf-nav__ul-drop">
+
+                    <li class="abf-nav__li-drop">
+                        <a class="abf-nav-li-drop__a" href="about-compass.html">About Compass
+                        </a>
+                    </li>
+
+                    <li class="abf-nav__li-drop">
+                        <a class="abf-nav-li-drop__a" href="concierge.html">Concierge
+                        </a>
+                    </li>
+
                 </ul>
 
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="transactions.html">Transactions</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li class="abf-nav__li">
+                    <a class="abf-nav-li__a" href="testimonials.html">Testimonials</a>
+                </li>
+
+                <li class="abf-nav__li"><a class="abf-nav-li__a" href="transactions.html">Transactions</a>
+                </li>
+
+                <li class="abf-nav__li">
+                    <a class="abf-nav-li__a" href="contact.html">Contact</a>
+                </li>
             </ul>
 
-            <div class="social-icons">
+            <div class="abf-social-icons">
 
-                <a href="https://www.instagram.com/stephstanford_stanfordgroup/" target=_blank>
-                    <i class="fab fa-instagram fa-lg">
+                <a class="abf-social-icons__a" href="https://www.instagram.com/stephstanford_stanfordgroup/"
+                    target=_blank>
+
+                    <i class="fab fa-instagram fa-lg abf-social-icons__icon">
                     </i>
+
                 </a>
 
-                <a href="https://www.linkedin.com/in/stephanie-stanford-0429/" target=_blank>
-                    <i class="fab fa-linkedin-in fa-lg"></i></a>
+                <a class="abf-social-icons__a" href="https://www.linkedin.com/in/stephanie-stanford-0429/"
+                    target=_blank>
 
-                <a href="https://www.facebook.com/stanfordgroupseattle" target=_blank>
-                    <i class="fab fa-facebook-f fa-lg"></i></a>
+                    <i class="fab fa-linkedin-in fa-lg abf-social-icons__icon"></i></a>
+
+                <a class="abf-social-icons__a" href="https://www.facebook.com/stanfordgroupseattle" target=_blank>
+                    <i class="fab fa-facebook-f fa-lg abf-social-icons__icon"></i></a>
 
 
 
@@ -64,41 +113,43 @@
         </nav>
     </header>
 
-    <div class="about-wrapper">
+    <div class="abf-wrapper">
 
-        <h1 class="about-heading-felix">ABOUT FELIX</h1>
+        <h1 class="abf-wrapper__h1">ABOUT FELIX</h1>
 
-        <div class="animation">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-            <div class="line4"></div>
-            <div class="line5"></div>
-            <div class="line6"></div>
-            <div class="line7"></div>
-            <div class="line8"></div>
-            <div class="line9"></div>
-            <div class="line10"></div>
-            <div class="line11"></div>
-            <div class="line12"></div>
+        <div class="abf-animation">
+            <div class="abf-animation__line1"></div>
+            <div class="abf-animation__line2"></div>
+            <div class="abf-animation__line3"></div>
+            <div class="abf-animation__line4"></div>
+            <div class="abf-animation__line5"></div>
+            <div class="abf-animation__line6"></div>
+            <div class="abf-animation__line7"></div>
+            <div class="abf-animation__line8"></div>
+            <div class="abf-animation__line9"></div>
+            <div class="abf-animation__line10"></div>
+            <div class="abf-animation__line11"></div>
+            <div class="abf-animation__line12"></div>
         </div>
 
-        <div class="felix-img-wrapper">
-            <img src="images/Felix.jpg" alt="">
+        <div class="abf-image-div">
+            <img class="abf__image" src="images/Felix.jpg" alt="">
         </div>
 
-        <div class="felix-info">
+        <div class="abf-info">
 
-            <h5>FelixStanford</h5>
-            <h6><em>Licensed Barker</em></h6>
+            <h5 class="abf-info__h5">FelixStanford</h5>
+            <h6 class="abf-info__h6"><em>Licensed Barker</em></h6>
 
         </div>
 
+        <main class="abf-main">
+            <p class="abf-main__p">Felix loves chasing squirrels, long naps, and Skittles. His primary role at the
+                Stanford Group is to
+                provide
+                home office security and comic relief.</p>
 
-        <p>Felix loves chasing squirrels, long naps, and Skittles. His primary role at the Stanford Group is to provide
-            home office security and comic relief.</p>
-
-
+        </main>
 
     </div>
 

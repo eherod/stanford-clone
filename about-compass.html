@@ -15,46 +15,96 @@
     <title>Document</title>
 </head>
 
-<body class="about-body">
+<body class="compass-body">
 
-    <header>
-        <input type="checkbox" id="toggler">
-        <label class="toggle-label" for="toggler"><span><i class="fas fa-bars"></i></span></label>
-        <div class="image-div"><img src="images/SG_Logo_RGB_Monogram+Type_Horiz_Black.png" alt="" class="logo"></div>
+    <header class="compass-hd">
+
+        <input type="checkbox" id="toggler" class="compass-hd__input">
+
+        <label class="compass-hd__toggle-label" for="toggler">
+            <span><i class="fas fa-bars compass-hd__burger"></i></span>
+        </label>
+
+        <div class="compass-hd__logo-div">
+            <img src="images/SG_Logo_RGB_Monogram+Type_Horiz_Black.png" alt="" class="compass-hd__logo">
+        </div>
 
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a> </li>
-                <li><a href="about-steph.html">About</a></li>
-                <ul>
-                    <li class="drop"><a href="about-steph.html">About Stephanie</a></li>
-                    <li class="drop"><a href="about-matt.html">About Matt</a></li>
-                    <li class="drop"><a href="about-felix.html">About Felix</a></li>
+        <nav class="compass-nav">
+
+            <ul class="compass-nav__ul">
+
+                <li class="compass-nav__li">
+                    <a class="compass-nav-li__a href=" index.html">Home</a>
+                </li>
+
+                <li class="compass-nav__li">
+                    <a class="compass-nav-li__a" href="about-steph.html">About</a>
+                </li>
+
+                <ul class="compass-nav__ul-drop">
+
+                    <li class="compass-nav__li-drop">
+                        <a class="compass-nav-li-drop__a" href="about-steph.html">About Stephanie</a>
+                    </li>
+
+                    <li class="compass-nav__li-drop">
+                        <a class="compass-nav-li-drop__a" href="about-matt.html">About Matt</a>
+                    </li>
+
+                    <li class="compass-nav__li-drop">
+                        <a class="compass-nav-li-drop__a" href="about-felix.html">About Felix</a>
+                    </li>
+
                 </ul>
 
-                <li><a href="about-compass.html">Compass</a> </li>
-                <ul>
-                    <li class="drop"><a href="about-compass.html">About Compass</a></li>
-                    <li class="drop"><a href="concierge.html">Concierge</a></li>
+                <li class="compass-nav__li">
+                    <a class="compass-nav-li__a" href="about-compass.html">Compass</a>
+                </li>
+
+                <ul class="compass-nav__ul-drop">
+
+                    <li class="compass-nav__li-drop">
+                        <a class="compass-nav-li-drop__a" href="about-compass.html">About Compass
+                        </a>
+                    </li>
+
+                    <li class="compass-nav__li-drop">
+                        <a class="compass-nav-li-drop__a" href="concierge.html">Concierge
+                        </a>
+                    </li>
+
                 </ul>
 
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="transactions.html">Transactions</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li class="compass-nav__li">
+                    <a class="compass-nav-li__a" href="testimonials.html">Testimonials</a>
+                </li>
+
+                <li class="compass-nav__li"><a class="compass-nav-li__a" href="transactions.html">Transactions</a>
+                </li>
+
+                <li class="compass-nav__li">
+                    <a class="compass-nav-li__a" href="contact.html">Contact</a>
+                </li>
             </ul>
 
-            <div class="social-icons">
-                <a href="https://www.instagram.com/stephstanford_stanfordgroup/" target=_blank>
-                    <i class="fab fa-instagram fa-lg">
+            <div class="compass-social-icons">
+
+                <a class="compass-social-icons__a" href="https://www.instagram.com/stephstanford_stanfordgroup/"
+                    target=_blank>
+
+                    <i class="fab fa-instagram fa-lg compass-social-icons__icon">
                     </i>
+
                 </a>
 
-                <a href="https://www.linkedin.com/in/stephanie-stanford-0429/" target=_blank>
-                    <i class="fab fa-linkedin-in fa-lg"></i></a>
+                <a class="compass-social-icons__a" href="https://www.linkedin.com/in/stephanie-stanford-0429/"
+                    target=_blank>
 
-                <a href="https://www.facebook.com/stanfordgroupseattle" target=_blank>
-                    <i class="fab fa-facebook-f fa-lg"></i></a>
+                    <i class="fab fa-linkedin-in fa-lg compass-social-icons__icon"></i></a>
+
+                <a class="compass-social-icons__a" href="https://www.facebook.com/stanfordgroupseattle" target=_blank>
+                    <i class="fab fa-facebook-f fa-lg compass-social-icons__icon"></i></a>
 
 
 
@@ -63,18 +113,18 @@
         </nav>
     </header>
 
-    <div class="about-wrapper">
+    <div class="compass-wrapper">
 
-        <h1 class="about-heading-compass">ABOUT COMPASS</h1>
+        <h1 class="compass-wrapper__h1">ABOUT COMPASS</h1>
 
 
 
-        <div class="compass-img-wrapper">
+        <div class="compass-img-div">
 
-            <p>A real estate company with a purpose
+            <p class="compass-img-div__p">A real estate company with a purpose
             </p>
 
-            <p>Our mission is to help everyone find their place in the world.</p>
+            <p class="compass-img-div__p">Our mission is to help everyone find their place in the world.</p>
 
             <img class="compass-image"
                 src="
@@ -86,32 +136,36 @@
             <p>Compass is building the first modern real estate platform, pairing the industry’s top talent with
                 technology to make the search and sell experience intelligent and seamless.</p>
 
-            <div class="compass-divider"></div>
+            <div class="compass-info__divider"></div>
 
         </div>
 
-        <section class="compass-section-2">
-            <div class="talk-bubble-wrapper">
+        <section class="compass-section2">
 
-                <div class="talk-bubble-img">
+            <div class="talk-bubble">
+
+                <div class="talk-bubble__img-div">
                     <img src="https://images.squarespace-cdn.com/content/v1/5dad311230eb5203e26c84c2/1572364421180-DOQ108CJHRNPTDXACQ5E/culture.v2_360.png"
-                        alt="" class="talk-bubbles">
+                        alt="" class="talk-bubble__img">
                 </div>
 
 
 
-                <h3>A brokerage of unparalleled agents</h3>
+                <h3 class="talk-bubble__h3">A brokerage of unparalleled agents</h3>
 
-                <p>As an innovative residential real estate firm, Compass empowers us as agents so we have more time for
+                <p class="talk-bubble__p">As an innovative residential real estate firm, Compass empowers us as agents
+                    so we have more time for
                     advising you, our clients. With the solutions-driven mindset of a startup and the sophistication of
                     a luxury brand, Compass is the future of real estate.</p>
             </div>
 
             <div class="hands-wrapper">
-                <img src="https://images.squarespace-cdn.com/content/v1/5dad311230eb5203e26c84c2/1572364611453-MU2LFP3J0U350L9QV2ES/Opportunity.png"
+                <img class="hands-wrapper__img"
+                    src="https://images.squarespace-cdn.com/content/v1/5dad311230eb5203e26c84c2/1572364611453-MU2LFP3J0U350L9QV2ES/Opportunity.png"
                     alt="">
-                <h3>A tech company reinventing the space</h3>
-                <p>To lead the industry requires the smartest tools built by the brightest minds across engineering,
+                <h3 class="hands-wrapper__h3">A tech company reinventing the space</h3>
+                <p class="hands-wrapper__p">To lead the industry requires the smartest tools built by the brightest
+                    minds across engineering,
                     design, and strategy. Through our proprietary platform, Compass is changing how agents and clients
                     navigate the process of finding or selling a home.</p>
 
@@ -120,9 +174,10 @@
 
         </section>
 
-        <section class="compass-section-3">
-            <h2>Guiding you from coast to coast</h2>
-            <p>Since our launch in 2012, we’ve aimed to simplify the real estate process, one market at a time. With
+        <section class="compass-section3">
+            <h2 class="compass-section3__h2">Guiding you from coast to coast</h2>
+            <p class="compass-section3__p">Since our launch in 2012, we’ve aimed to simplify the real estate process,
+                one market at a time. With
                 agents and teams serving vibrant communities coast to coast, Compass is now the country's largest
                 independent real estate brokerage.</p>
             <div class="map-div">
@@ -130,14 +185,14 @@
 
 
                 <img src="https://images.squarespace-cdn.com/content/v1/5dad311230eb5203e26c84c2/1572371895354-JZNBYGE7X96HI9GLOOIE/Compass_about_map_padding.png"
-                    alt="" class="map">
+                    alt="" class="map-div__img">
 
             </div>
 
             <div class="national-reach">
-                <h3>National Reach</h3>
-                <p>Where we are:</p>
-                <p>
+                <h3 class="national-reach__h3">National Reach</h3>
+                <p class="national-reach__p1">Where we are:</p>
+                <p class="national-reach__p2">
                     <a href="https://www.compass.com" target="_blank">Aspen -</a>
                     <a href="https://www.compass.com" target="_blank">Atlanta -</a>
                     <a href="https://www.compass.com" target="_blank">Austin and Central Texas -</a>
@@ -183,15 +238,16 @@
 
         </section>
 
-        <section class="compass-section-4">
-            <div class="seattle-pic-wrapper">
+        <section class="compass-section4">
+            <div class="compass-section4__div">
                 <img src="https://images.squarespace-cdn.com/content/v1/5dad311230eb5203e26c84c2/1572372316394-U2KHNSCFVKN67WNZPZYZ/2.jpg"
-                    alt="" class="seattle-pic">
+                    alt="" class="compass-section__img">
             </div>
 
-            <h3>Local Expertise</h3>
+            <h3 class="compass-section4__h3">Local Expertise</h3>
 
-            <p>As long-term residents of Seattle, every purchase and sale is thorough and thoughtful. We are your
+            <p class="compass-section4__p">As long-term residents of Seattle, every purchase and sale is thorough and
+                thoughtful. We are your
                 trusted advisors, helping everyone from the first-time buyer to the seasoned seller make better, more
                 informed decisions.</p>
 

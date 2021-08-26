@@ -15,47 +15,96 @@
     <title>Document</title>
 </head>
 
-<body class="about-body">
+<body class="abm-body">
 
-    <header>
-        <input type="checkbox" id="toggler">
-        <label class="toggle-label" for="toggler"><span><i class="fas fa-bars"></i></span></label>
-        <div class="image-div"><img src="images/SG_Logo_RGB_Monogram+Type_Horiz_Black.png" alt="" class="logo"></div>
+    <header class="abm-hd">
+
+        <input type="checkbox" id="toggler" class="abm-hd__input">
+
+        <label class="abm-hd__toggle-label" for="toggler">
+            <span><i class="fas fa-bars abm-hd__burger"></i></span>
+        </label>
+
+        <div class="abm-hd__logo-div">
+            <img src="images/SG_Logo_RGB_Monogram+Type_Horiz_Black.png" alt="" class="abm-hd__logo">
+        </div>
 
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a> </li>
-                <li><a href="about-steph.html">About</a></li>
-                <ul>
-                    <li class="drop"><a href="about-steph.html">About Stephanie</a></li>
-                    <li class="drop"><a href="about-matt.html">About Matt</a></li>
-                    <li class="drop"><a href="about-felix.html">About Felix</a></li>
+        <nav class="abm-nav">
+
+            <ul class="abm-nav__ul">
+
+                <li class="abm-nav__li">
+                    <a class="abm-nav-li__a href=" index.html">Home</a>
+                </li>
+
+                <li class="abm-nav__li">
+                    <a class="abm-nav-li__a" href="about-steph.html">About</a>
+                </li>
+
+                <ul class="abm-nav__ul-drop">
+
+                    <li class="abm-nav__li-drop">
+                        <a class="abm-nav-li-drop__a" href="about-steph.html">About Stephanie</a>
+                    </li>
+
+                    <li class="abm-nav__li-drop">
+                        <a class="abm-nav-li-drop__a" href="about-matt.html">About Matt</a>
+                    </li>
+
+                    <li class="abm-nav__li-drop">
+                        <a class="abm-nav-li-drop__a" href="about-felix.html">About Felix</a>
+                    </li>
+
                 </ul>
 
-                <li><a href="about-compass.html">Compass</a> </li>
-                <ul>
-                    <li class="drop"><a href="about-compass.html">About Compass</a></li>
-                    <li class="drop"><a href="concierge.html">Concierge</a></li>
+                <li class="abm-nav__li">
+                    <a class="abm-nav-li__a" href="about-compass.html">Compass</a>
+                </li>
+
+                <ul class="abm-nav__ul-drop">
+
+                    <li class="abm-nav__li-drop">
+                        <a class="abm-nav-li-drop__a" href="about-compass.html">About Compass
+                        </a>
+                    </li>
+
+                    <li class="abm-nav__li-drop">
+                        <a class="abm-nav-li-drop__a" href="concierge.html">Concierge
+                        </a>
+                    </li>
+
                 </ul>
 
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="transactions.html">Transactions</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li class="abm-nav__li">
+                    <a class="abm-nav-li__a" href="testimonials.html">Testimonials</a>
+                </li>
+
+                <li class="abm-nav__li"><a class="abm-nav-li__a" href="transactions.html">Transactions</a>
+                </li>
+
+                <li class="abm-nav__li">
+                    <a class="abm-nav-li__a" href="contact.html">Contact</a>
+                </li>
             </ul>
 
-            <div class="social-icons">
+            <div class="abm-social-icons">
 
-                <a href="https://www.instagram.com/stephstanford_stanfordgroup/" target=_blank>
-                    <i class="fab fa-instagram fa-lg">
+                <a class="abm-social-icons__a" href="https://www.instagram.com/stephstanford_stanfordgroup/"
+                    target=_blank>
+
+                    <i class="fab fa-instagram fa-lg abm-social-icons__icon">
                     </i>
+
                 </a>
 
-                <a href="https://www.linkedin.com/in/stephanie-stanford-0429/" target=_blank>
-                    <i class="fab fa-linkedin-in fa-lg"></i></a>
+                <a class="abm-social-icons__a" href="https://www.linkedin.com/in/stephanie-stanford-0429/"
+                    target=_blank>
 
-                <a href="https://www.facebook.com/stanfordgroupseattle" target=_blank>
-                    <i class="fab fa-facebook-f fa-lg"></i></a>
+                    <i class="fab fa-linkedin-in fa-lg abm-social-icons__icon"></i></a>
+
+                <a class="abm-social-icons__a" href="https://www.facebook.com/stanfordgroupseattle" target=_blank>
+                    <i class="fab fa-facebook-f fa-lg abm-social-icons__icon"></i></a>
 
 
 
@@ -64,60 +113,73 @@
         </nav>
     </header>
 
-    <div class="about-wrapper">
+    <div class="abm-wrapper">
 
-        <h1 class="about-heading-matt">ABOUT MATT</h1>
+        <h1 class="abm-wrapper__h1">ABOUT MATT</h1>
 
-        <div class="animation">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-            <div class="line4"></div>
-            <div class="line5"></div>
-            <div class="line6"></div>
-            <div class="line7"></div>
-            <div class="line8"></div>
-            <div class="line9"></div>
-            <div class="line10"></div>
-            <div class="line11"></div>
-            <div class="line12"></div>
+        <div class="abm-animation">
+            <div class="abm-animation__line1"></div>
+            <div class="abm-animation__line2"></div>
+            <div class="abm-animation__line3"></div>
+            <div class="abm-animation__line4"></div>
+            <div class="abm-animation__line5"></div>
+            <div class="abm-animation__line6"></div>
+            <div class="abm-animation__line7"></div>
+            <div class="abm-animation__line8"></div>
+            <div class="abm-animation__line9"></div>
+            <div class="abm-animation__line10"></div>
+            <div class="abm-animation__line11"></div>
+            <div class="abm-animation__line12"></div>
         </div>
 
-        <div class="matt-img-wrapper">
-            <img src="images/Matt.jpg" alt="">
+        <div class="abm-image-div">
+            <img class="abm-logo" src="images/Matt.jpg" alt="">
         </div>
 
-        <div class="matt-info">
+        <div class="abm-info">
 
-            <h5>Matt Stanford</h5>
-            <h6><em>Broker</em></h6>
-            <p>matt@stanfordgroupseattle.com <span>|</span></p>
-            <p>206.334.6760</p>
+            <h5 class="abm-info__h5">Matt Stanford</h5>
+            <h6 class="abm-info__h6"><em>Broker</em></h6>
+            <p class="abm-info__email-p">matt@stanfordgroupseattle.com <span>|</span></p>
+            <p class="abm-info__phone-p">206.334.6760</p>
         </div>
 
+        <main class="abm-main">
+            <p class="abm-main__p">Having been a lifelong Seattleite, Matt has witnessed the amazing growth this city
+                has experienced, and from
+                an early age, he wanted to be part of it. Matt has always been drawn to construction projects, the art
+                of
+                building, and specifically how people live in their homes or workplace.</p>
 
-        <p>Having been a lifelong Seattleite, Matt has witnessed the amazing growth this city has experienced, and from
-            an early age, he wanted to be part of it. Matt has always been drawn to construction projects, the art of
-            building, and specifically how people live in their homes or workplace.</p>
+            <p class="abm-main__p"> After completing school at St. Joseph’s Elementary School, Blanchet High School, and
+                Gonzaga University,
+                Matt moved overseas for three years to play professional basketball. In 1995, he moved back to Seattle
+                and
+                began a 20-year career in the construction industry. Matt started as a project manager for a high-end
+                custom
+                remodeling company, then owned a house flipping business, and eventually became a general contractor,
+                helping homeowners turn their existing house into their dream home. Each and every experience of either
+                developing his own investment property or helping homeowner’s ideas become a reality, provided him with
+                a
+                unique understanding of all facets of home-ownership. These experiences have dovetailed nicely into
+                helping
+                clients purchase and sell homes.</p>
 
-        <p> After completing school at St. Joseph’s Elementary School, Blanchet High School, and Gonzaga University,
-            Matt moved overseas for three years to play professional basketball. In 1995, he moved back to Seattle and
-            began a 20-year career in the construction industry. Matt started as a project manager for a high-end custom
-            remodeling company, then owned a house flipping business, and eventually became a general contractor,
-            helping homeowners turn their existing house into their dream home. Each and every experience of either
-            developing his own investment property or helping homeowner’s ideas become a reality, provided him with a
-            unique understanding of all facets of home-ownership. These experiences have dovetailed nicely into helping
-            clients purchase and sell homes.</p>
+            <p class="abm-main__p">Matt has a detailed understanding of costs associated with remodeling projects, a
+                keen eye for design
+                possibilities and expansion concepts, and broad-based knowledge of the mechanical aspects related to
+                homes.
+                This knowledge has proven to be key in helping clients make astute decisions when contemplating taking
+                on a
+                “fixer” house, or just making sense of a home inspection report. He enjoys guiding clients through this
+                process so they can make a sound financial decision.</p>
 
-        <p>Matt has a detailed understanding of costs associated with remodeling projects, a keen eye for design
-            possibilities and expansion concepts, and broad-based knowledge of the mechanical aspects related to homes.
-            This knowledge has proven to be key in helping clients make astute decisions when contemplating taking on a
-            “fixer” house, or just making sense of a home inspection report. He enjoys guiding clients through this
-            process so they can make a sound financial decision.</p>
+            <p class="abm-main__p"> In addition to being a real estate broker, Matt has a variety of other interests as
+                well. He loves being
+                outside spending time on/in the water either fishing, surfing, or boating with his wife Stephanie, son
+                Jackson, daughter Sidney, and their French bulldog Felix.</p>
 
-        <p> In addition to being a real estate broker, Matt has a variety of other interests as well. He loves being
-            outside spending time on/in the water either fishing, surfing, or boating with his wife Stephanie, son
-            Jackson, daughter Sidney, and their French bulldog Felix.</p>
+        </main>
 
     </div>
 

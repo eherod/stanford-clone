@@ -1,139 +1,264 @@
 
 
-.about-steph__body{
-    font-family: 'Merriweather', serif;
+.abs-bd{
+    @include about-body;
+    
+    
+}
+
+
+// Header and Nav
+.abs-hd{
+   @include about-header;
+
+    &__input{
+        display: none;
+
+        
+        
+    }
+
+    &__input:checked ~ nav{
+        transform: scale(1, 1);
+       
+    }
+
+    &__input:checked ~ nav li a{
+        opacity: 1;
+        transition: opacity 500ms ease-in-out 500ms; 
+        
+    }
+
+    &__toggle-label{
+        @include label;
+    }
+
+    &__logo-div{
+        width: 5rem;
+
+        
+        
+    }
+    &__logo{
+        width: 100%;
+        padding-top: .2rem;
+    }
+    
+}
+
+
+.abs-nav{
+   @include nav-style;
+
+    
+
+    
 
 }
 
-.about-steph__header{
-    @extend .home__header;
+.abs-nav__li{
+   @include nav-item-style;
+    
+}
 
-    .about-steph-header__input{
-        @extend .home-header__input;
+.abs-nav-li__a{
+    @include nav-link-style;
+    
+}  
 
+.abs-nav__li-drop{
+    
+    @include nav-drop-styles;
+    
+
+    .abs-nav-li-drop__a{
+
+        @include nav-link-style;
+    
     }
-    .about-steph-header__toggle-label{
+}
 
-        transform: scale(1, 1);
+
+
+.abs-social-icons{
+    padding: 1rem;
+    border: 1px solid rgba(0,0,0, .2);
+
+    .abs-social-icons__a {
+        color: inherit;
+
+        .fab {
+            opacity: .3;
+            margin-right: .5rem;  
+        }
+
+        .fas{
+            height: 3rem;
+            
+            
+        }
         
     }
 }
+
+
+
+.abs-wrapper{
+   @include about-wrapper;
+
+    &__h1{
+    
+        @include about-h1;
+        
+    }
+}
+
+
+.abs-animation{
+   
+    @extend .animation;
+
+    &__line1{
+
+        @extend .animation__line1;
+    
+    }
+    &__line2{
+        
+        @extend .animation__line2;
+    }
+    &__line3{
+        
+        @extend .animation__line3;
+        
+    }
+    
+    &__line4{
+        
+        @extend .animation__line4;
+        
+    }
+    &__line5{
+        
+        @extend .animation__line5;
+        
+    }
+    &__line6{
+        
+        @extend .animation__line6;
+        
+    }
+    &__line7{
+        
+        @extend .animation__line7;
+        
+    }
+    &__line8{
+        
+        @extend .animation__line8;
+        
+    }
+    &__line9{
+        
+        @extend .animation__line9;
+        
+    }
+    &__line10{
+        
+        @extend .animation__line10;
+        
+    }
+    &__line11{
+        
+        @extend .animation__line11;
+        
+    }
+    &__line12{
+        
+        @extend .animation__line12;
+    }
+    
+
+}
+
+
+
+
+.abs-img-div{
+   @include about-image-div;
+
+    .abs__img{
+        width: 100%;
+    }
+    
+}
+
+.abs-info {
+   @include info-section;
+
+    & p{
+        font-weight: normal;
+    }
+
+    &__h5{
+        @include info-h5;
+    
+    }
+    &__h6{
+        @include info-h6;
+        
+    }
+
+    &__email-p{
+        @include info-email-p;
+    
+    }
+
+    &__phone-p{
+        @extend .abs-info__email-p;
+    }
+
+    &__span {
+       @include info-span;
+    }
+
+}
+
+.abs-main{
+   @include about-main;
+
+
+    & p{
+        margin-bottom: 2rem;
+    }
+
+}
+
+
+
+
+
+
+
+
 
    
 
 
 
-.about-body p{
-    font-weight: 300;
-    font-size: .9rem;
-    margin: 1rem 1rem 0 1rem;
-    line-height: 2;
-    padding: .5rem;
-}
-
-.about-body p:last-child{
-    margin-bottom: 3rem;
-}
-.about-wrapper,
-.transaction-wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
-
-.about-heading-steph{
-    
-    font-weight: 100;
-    font-size: 2.25rem;
-    padding: 6rem 6rem 4rem 4rem;
-    letter-spacing: 10px;
-}
-
-
-.steph-img-wrapper,
-.matt-img-wrapper,
-.felix-img-wrapper,
-.testimonial-img-wrapper{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-    
-}
-
-.steph-img-wrapper img{
-
-    width: 90%;
-    
-}
-
-
-.steph-info {
-    margin-right: 3.8rem;
-}
 
 
 
-.steph-info h5,
-.felix-info h5,
-.matt-info h5{
-    font-weight: bold;
-    letter-spacing: 2px;
-    padding: .5rem 0;
-
-}
-.steph-info h6,
-.felix-info h6,
-.matt-info h6{
-    font-size: .9rem;
-    font-weight: 400;
-    padding-bottom: .25rem;
-    
-    
-
-}
-
-
-.steph-info p,
-.matt-info p{
-    padding: unset;
-    margin: unset;
-    line-height: unset;
-    padding-bottom: .25rem;
-
-}
-.steph-info span,
-.matt-info span {
-    display: inline-block;
-    position: relative;
-    font-weight: 300;
-    font-size: 1rem;
-    top: 1px;
-}
 
 
 
-.about-heading-matt,
-.about-heading-felix{
-    
-    font-weight: 100;
-    font-size: 2.25rem;
-    padding: 2rem 0;
-    letter-spacing: 10px;
-}
 
-.matt-info{
-    margin-right: 6rem;
-}
 
-.felix-info{
-    
-    display: flex;
-    flex-direction: column;
-    margin-right: 14rem;
-    
-}
-.about-wrapper-felix p{
-    padding: unset;
-}
+
+
+
+
+
+
+
+

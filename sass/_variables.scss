@@ -12,3 +12,139 @@
     width: 100%;
     border: 1px solid rgba(0,0,0, .2);
 }
+
+
+@mixin animation-styles{
+    border-right: 1px dotted rgba(0,0,0, 1);
+    margin: .8rem;
+    height: 1rem;
+}
+
+
+/*about variables*/
+@mixin about-body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+@mixin about-header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0, .2);
+}
+
+@mixin label {
+    
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        padding: 1rem;
+    
+}
+
+@mixin nav-style{
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    width: 100%;
+    height: 120vh;
+    background-color: #fff;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 500ms ease-in-out 150ms;
+    z-index: 999;
+
+}
+
+@mixin nav-item-style{
+
+    list-style: none;
+    padding: .75rem;
+    width: 100%;
+    border: 1px solid rgba(0,0,0, .2);
+
+}
+
+@mixin about-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-bottom: 3rem;
+}
+
+
+@mixin about-h1 {
+    font-weight: 100;
+    font-size: 2.25rem;
+    padding: 6rem 6rem 4rem 4rem;
+    letter-spacing: 10px;
+    
+}
+
+@mixin about-image-div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 90%;
+}
+
+@mixin info-section{
+    margin-right: 2rem;
+    line-height: 1.4;
+    margin-bottom: 6rem;
+
+}
+
+@mixin info-h5{
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: .5rem 0;
+
+}
+@mixin info-h6{
+    font-size: .9rem;
+    font-weight: 400;
+    padding-bottom: .25rem;
+    
+}
+
+@mixin info-email-p{
+    padding: unset;
+    margin: unset;
+    line-height: unset;
+    padding-bottom: .25rem;
+
+}
+
+
+
+@mixin info-span {
+    display: inline-block;
+    position: relative;
+    font-weight: 300;
+    font-size: 1rem;
+   bottom: .5px;
+}
+
+@mixin about-main{
+    margin: 0 1rem;
+    font-weight:700;
+    font-size: .85rem;
+    letter-spacing: .05rem;
+    line-height: 2;
+}
+
+// Contact Form
+@mixin form{
+    
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,144 @@
+
+
+
+
+.animation{
+   
+    height: 3rem;
+    width: 100%;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    &__line1{
+
+        animation: line-rotation1 3s ease-in-out infinite alternate;
+        @include animation-styles;
+    
+    }
+    &__line2{
+        
+        animation: line-rotation2 3s ease-in-out 25ms infinite alternate;
+        @include animation-styles;
+    }
+    &__line3{
+        
+        animation: line-rotation3 3s ease-in-out 50ms infinite alternate;
+        @include animation-styles;
+        
+    }
+    
+    &__line4{
+        
+        animation: line-rotation4 3s ease-in-out 60ms infinite alternate;
+        @include animation-styles;
+        
+    }
+    &__line5{
+        
+        animation: line-rotation5 3s ease-in-out 70ms infinite alternate;
+        @include animation-styles;
+        
+    }
+    &__line6{
+        
+        animation: line-rotation6 3s ease-in-out 80ms infinite alternate;
+        @include animation-styles;
+        
+    }
+    &__line7{
+        
+        animation: line-rotation7 3s ease-in-out 90ms infinite alternate;
+        @include animation-styles;
+        
+    }
+    &__line8{
+        
+        animation: line-rotation8 3s ease-in-out 100ms infinite alternate;
+        @include animation-styles;
+        
+    }
+    &__line9{
+        
+        animation: line-rotation9 3s ease-in-out 200ms infinite alternate;
+        @include animation-styles;
+        
+    }
+    &__line10{
+        
+        animation: line-rotation10 3s ease-in-out 300ms infinite alternate;
+        @include animation-styles;
+        
+    }
+    &__line11{
+        
+        animation: line-rotation11 3s ease-in-out 400ms infinite alternate;
+        @include animation-styles;
+        
+    }
+    &__line12{
+        
+        animation: line-rotation12 3s ease-in-out 500ms infinite alternate;
+        @include animation-styles;
+        
+    }
+    
+
+}
+
+
+
+
+@keyframes line-rotation1{
+
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(80deg)}
+
+}
+
+@keyframes line-rotation2{
+    0%{transform: rotate(-30deg)}
+    100%{transform: rotate(75deg)}
+}
+
+@keyframes line-rotation3{
+    0%{transform: rotate(-35deg)}
+    100%{transform: rotate(70deg)}
+}
+@keyframes line-rotation4{
+    0%{transform: rotate(-40deg)}
+    100%{transform: rotate(65deg)}
+}
+@keyframes line-rotation5{
+    0%{transform: rotate(-45deg)}
+    100%{transform: rotate(60deg)}
+}
+@keyframes line-rotation6{
+    0%{transform: rotate(-50deg)}
+    100%{transform: rotate(55deg)}
+}
+@keyframes line-rotation7{
+    0%{transform: rotate(-55deg)}
+    100%{transform: rotate(50deg)}
+}
+@keyframes line-rotation8{
+    0%{transform: rotate(-60deg)}
+    100%{transform: rotate(45deg)}
+}
+@keyframes line-rotation9{
+    0%{transform: rotate(-65deg)}
+    100%{transform: rotate(40deg)}
+}
+@keyframes line-rotation10{
+    0%{transform: rotate(-70deg)}
+    100%{transform: rotate(35deg)}
+}
+@keyframes line-rotation11{
+    0%{transform: rotate(-75deg)}
+    100%{transform: rotate(30deg)}
+}
+@keyframes line-rotation12{
+    0%{transform: rotate(-85deg)}
+    100%{transform: rotate(0deg)}
+}

@@ -1,0 +1,257 @@
+
+
+.abf-bd{
+    @include about-body;
+    
+    
+}
+
+
+// Header and Nav
+.abf-hd{
+   @include about-header;
+
+    &__input{
+        display: none;
+
+        
+        
+    }
+
+    &__input:checked ~ nav{
+        transform: scale(1, 1);
+       
+    }
+
+    &__input:checked ~ nav li a{
+        opacity: 1;
+        transition: opacity 500ms ease-in-out 500ms; 
+        
+    }
+
+    &__toggle-label{
+        @include label;
+    }
+
+    &__logo-div{
+        width: 5rem;
+
+        
+        
+    }
+    &__logo{
+        width: 100%;
+        padding-top: .2rem;
+    }
+    
+}
+
+
+.abf-nav{
+   @include nav-style;
+
+    
+
+    
+
+}
+
+.abf-nav__li{
+   @include nav-item-style;
+    
+}
+
+.abf-nav-li__a{
+    @include nav-link-style;
+    
+}  
+
+.abf-nav__li-drop{
+    
+    @include nav-drop-styles;
+    
+
+    .abf-nav-li-drop__a{
+
+        @include nav-link-style;
+    
+    }
+}
+
+
+
+.abf-social-icons{
+    padding: 1rem;
+    border: 1px solid rgba(0,0,0, .2);
+
+    .abf-social-icons__a {
+        color: inherit;
+
+        .fab {
+            opacity: .3;
+            margin-right: .5rem;  
+        }
+
+        .fas{
+            height: 3rem;
+            
+            
+        }
+        
+    }
+}
+
+
+
+.abf-wrapper{
+   @include about-wrapper;
+
+    &__h1{
+    
+        @include about-h1;
+        
+    }
+}
+
+
+.abf-animation{
+   
+    @extend .animation;
+
+    &__line1{
+
+        @extend .animation__line1;
+    
+    }
+    &__line2{
+        
+        @extend .animation__line2;
+    }
+    &__line3{
+        
+        @extend .animation__line3;
+        
+    }
+    
+    &__line4{
+        
+        @extend .animation__line4;
+        
+    }
+    &__line5{
+        
+        @extend .animation__line5;
+        
+    }
+    &__line6{
+        
+        @extend .animation__line6;
+        
+    }
+    &__line7{
+        
+        @extend .animation__line7;
+        
+    }
+    &__line8{
+        
+        @extend .animation__line8;
+        
+    }
+    &__line9{
+        
+        @extend .animation__line9;
+        
+    }
+    &__line10{
+        
+        @extend .animation__line10;
+        
+    }
+    &__line11{
+        
+        @extend .animation__line11;
+        
+    }
+    &__line12{
+        
+        @extend .animation__line12;
+    }
+    
+
+}
+
+
+
+
+.abf-img-wrap{
+    @include about-image-div;
+    overflow: hidden;
+
+ 
+
+}
+
+.abf__img{
+    width: 100%;
+}
+
+.abf-info {
+   margin-left: 2rem;
+    line-height: 1.4;
+    margin-bottom: 6rem;
+    width: 100%;
+
+    
+
+    &__h5{
+        @include info-h5;
+    
+    }
+    &__h6{
+        @include info-h6;
+        
+    }
+
+    
+
+}
+
+.abf-main{
+   @include about-main;
+
+
+    & p{
+        margin-bottom: 2rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,386 @@
+
+.concierge-bd{
+    @include about-body;
+}
+.concierge-hd{
+    @include about-header;
+ 
+     &__input{
+         display: none;
+ 
+         
+         
+     }
+ 
+     &__input:checked ~ nav{
+         transform: scale(1, 1);
+        
+     }
+ 
+     &__input:checked ~ nav li a{
+         opacity: 1;
+         transition: opacity 500ms ease-in-out 500ms; 
+         
+     }
+ 
+     &__toggle-label{
+         @include label;
+     }
+ 
+     &__logo-div{
+         width: 5rem;
+ 
+         
+         
+     }
+     &__logo{
+         width: 100%;
+         padding-top: .2rem;
+     }
+     
+ }
+ 
+ 
+ .concierge-nav{
+    @include nav-style;
+ 
+     
+ 
+     
+ 
+ }
+ 
+ .concierge-nav__li{
+    @include nav-item-style;
+     
+ }
+ 
+ .concierge-nav-li__a{
+     @include nav-link-style;
+     
+ }  
+ 
+ .concierge-nav__li-drop{
+     
+     @include nav-drop-styles;
+     
+ 
+     .concierge-nav-li-drop__a{
+ 
+         @include nav-link-style;
+     
+     }
+ }
+ 
+ 
+ 
+ .concierge-social-icons{
+     padding: 1rem;
+     border: 1px solid rgba(0,0,0, .2);
+ 
+     .concierge-social-icons__a {
+         color: inherit;
+ 
+         .fab {
+             opacity: .3;
+             margin-right: .5rem;  
+         }
+ 
+         .fas{
+             height: 3rem;
+             
+             
+         }
+         
+     }
+ }
+
+ .concierge-wrapper{
+
+    &__h1{
+        padding: 4rem 1.5rem;
+        letter-spacing: 10px;
+        font-size: 2.5rem;
+        line-height: 1.5;
+    }
+
+    .concierge-gif-div{
+
+        width: 80%;
+        margin-left: 1rem;
+       
+        
+
+        .concierge__gif{
+            width: 100%;
+
+        }
+
+    }
+
+    .concierge-card{
+        position: relative;
+        left: 2.5rem;
+        bottom: 4.5rem;
+        background-color: #000;
+        color: #fff;
+        width: 80%;
+        text-align: left;
+
+        & p:first-child{
+            font-size: .8rem;
+            margin: 1rem auto;
+            padding: 2rem 2rem 0 2rem;
+            font-weight: normal;
+            line-height: 1.5;
+           
+        }
+
+        & p:last-child{
+            font-size: .8rem;
+            font-weight: bold;
+            margin: 0 auto 1rem auto;
+            padding: 0rem 2rem 2rem 2rem;
+            font-weight: normal;
+            line-height: 1.5;
+        }
+         
+    }
+
+    .concierge-contact{
+
+        &__h2{
+            font-size: 1.79rem;
+            letter-spacing: .1rem;
+            line-height: 1.3;
+            margin-top: -1rem;
+            padding: 0 1rem;
+            margin-bottom: 2rem;
+           
+        }
+
+    }
+
+       .concierge-contact-form{
+           @include form;
+
+           &__name{
+
+            display: flex;
+            flex-direction: column;
+
+            &-label{
+
+                padding: .5rem 0 .5rem .6rem;
+                letter-spacing: 2px;
+                color: rgba(0,0,0, .5);
+
+            }
+
+           }
+
+           .concierge-form-first-last{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            .first-last__first-name{
+
+                width: 45%;
+                padding: .5rem;
+
+            }
+
+            .first-last__last-name{
+                width: 45%;
+                padding: .5rem;
+
+            }
+
+            .first-last__first-label{
+                font-size: .65rem;
+                letter-spacing: 2px;
+                padding-top: .5rem;
+                margin-right: 5.8rem;
+                color:rgba(0,0,0, .7);
+            }
+
+            .first-last__last-label{
+                @extend .first-last__first-label;
+                
+            }
+
+
+           }
+
+           .concierge-form-email{
+
+            display: flex;
+            flex-direction: column;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            width: 100%;
+
+            .email__label{
+
+                width: 92%;
+                align-self: center;
+                margin-right: 1.5rem;
+                padding: .5rem 0 .5rem .6rem;
+                letter-spacing: 2px;
+                color: rgba(0,0,0, .5);
+
+            }
+            .email__input{
+                padding: .5rem;
+                width: 92%;
+                align-self: center;
+                margin-right: .45rem;
+
+            }
+           }
+
+           .concierge-form-phone{
+            display: flex;
+            flex-direction: column;
+
+            .phone__label{
+
+                padding: .5rem 0 .5rem .6rem;
+                letter-spacing: 2px;
+                color: rgba(0,0,0, .5);
+
+
+            }
+
+            .phone__input{
+                display: flex;
+                padding-left: .7rem;
+                grid-gap: 1rem;
+
+                #phone{
+                    width: 20%;
+                    padding: .5rem;
+                
+                }
+               
+            }
+            .phone-hash{
+                padding-left: 1rem;
+                display: flex;
+                grid-gap: 3rem;
+                font-size: .85rem;
+                padding-top: .5rem;
+                opacity: .6;
+                margin-bottom: 2rem;
+
+            }
+
+           }
+
+           button{
+            width: 40%;
+            padding: 1rem 2rem;
+            border-radius: 0;
+            color: white;
+            background-color: black;
+            border: none;
+            margin-left: .8rem;
+            margin-bottom: 3rem;
+            opacity: .8;
+
+            &:hover{
+
+                background-color: rgba(0,0,0, .8);
+                cursor: pointer;
+
+            }
+        }
+        
+        
+
+    }
+
+
+ }
+
+
+.concierge-bottom{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    .smart{
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 2rem;
+        
+
+        &__h3{
+            font-size: 2rem;
+            letter-spacing: 3px;
+            padding: 1rem;
+        }
+
+        &__p{
+            padding: 0rem 1rem;
+            font-size: .9rem;
+            line-height: 2;
+            font-weight: normal;
+        }
+
+    }
+
+    .fast{
+        @extend .smart;
+
+        &__h3{
+
+            @extend .smart__h3;
+
+        }
+
+        &__p{
+            @extend .smart__p;
+        }
+    }
+    .transparent{
+        @extend .smart;
+
+        &__h3{
+
+            @extend .smart__h3;
+
+        }
+
+        &__p{
+            @extend .smart__p;
+        }
+
+
+
+    }
+    .easy{
+
+        @extend .smart;
+
+        &__h3{
+
+            @extend .smart__h3;
+
+        }
+
+        &__p{
+            @extend .smart__p;
+        }
+
+    }
+    
+}
+
+ 
+
+

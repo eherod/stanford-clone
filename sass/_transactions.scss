@@ -1,0 +1,212 @@
+.transactions-bd{
+    @include about-body;
+   
+
+}
+.transactions-hd{
+    @include about-header;
+ 
+     &__input{
+         display: none;
+ 
+         
+         
+     }
+ 
+     &__input:checked ~ nav{
+         transform: scale(1, 1);
+        
+     }
+ 
+     &__input:checked ~ nav li a{
+         opacity: 1;
+         transition: opacity 500ms ease-in-out 500ms; 
+         
+     }
+ 
+     &__toggle-label{
+         @include label;
+     }
+ 
+     &__logo-div{
+         width: 5rem;
+ 
+     
+     }
+     &__logo{
+         width: 100%;
+         padding-top: .2rem;
+     }
+     
+ }
+ 
+ 
+ .transactions-nav{
+    @include nav-style;
+ 
+     
+ 
+     
+ 
+ }
+ 
+ .transactions-nav__li{
+    @include nav-item-style;
+     
+ }
+ 
+ .transactions-nav-li__a{
+     @include nav-link-style;
+     
+ }  
+ 
+ .transactions-nav__li-drop{
+     
+     @include nav-drop-styles;
+     
+ 
+     .transactions-nav-li-drop__a{
+ 
+         @include nav-link-style;
+     
+     }
+ }
+ 
+
+ .transactions-social-icons{
+     padding: 1rem;
+     border: 1px solid rgba(0,0,0, .2);
+ 
+     .transactions-social-icons__a {
+         color: inherit;
+ 
+         .fab {
+             opacity: .3;
+             margin-right: .5rem;  
+         }
+ 
+         .fas{
+             height: 3rem;
+             
+             
+         }
+         
+     }
+ }
+
+ .transactions-wrapper{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+     &__h1{
+        font-weight: 100;
+        font-size: 2.25rem;
+        padding:  3rem 0;
+        letter-spacing: 5px;
+
+     }
+
+     .transactions-animation{
+   
+        @extend .animation;
+    
+        &__line1{
+    
+            @extend .animation__line1;
+        
+        }
+        &__line2{
+            
+            @extend .animation__line2;
+        }
+        &__line3{
+            
+            @extend .animation__line3;
+            
+        }
+        
+        &__line4{
+            
+            @extend .animation__line4;
+            
+        }
+        &__line5{
+            
+            @extend .animation__line5;
+            
+        }
+        &__line6{
+            
+            @extend .animation__line6;
+            
+        }
+        &__line7{
+            
+            @extend .animation__line7;
+            
+        }
+        &__line8{
+            
+            @extend .animation__line8;
+            
+        }
+        &__line9{
+            
+            @extend .animation__line9;
+            
+        }
+        &__line10{
+            
+            @extend .animation__line10;
+            
+        }
+        &__line11{
+            
+            @extend .animation__line11;
+            
+        }
+        &__line12{
+            
+            @extend .animation__line12;
+        }
+        
+    
+    }
+
+    &__h2{
+
+        font-size: 1.9rem;
+        line-height: 1.5;
+        letter-spacing: 5px;
+        padding-left: 1.1rem;
+        margin-bottom: 2rem;
+
+    }
+
+        .recent-sold{
+
+        width: 90%;
+        padding-bottom: 2rem;
+
+            &__img{
+            width: 100%;
+        }
+    }
+
+    }
+
+
+ 
+
+
+
+
+  
+
+
+
+
+
+ 

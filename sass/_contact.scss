@@ -1,0 +1,262 @@
+.contact-bd{
+    @include about-body;
+   
+
+}
+.contact-hd{
+    @include about-header;
+ 
+     &__input{
+         display: none;
+ 
+         
+         
+     }
+ 
+     &__input:checked ~ nav{
+         transform: scale(1, 1);
+        
+     }
+ 
+     &__input:checked ~ nav li a{
+         opacity: 1;
+         transition: opacity 500ms ease-in-out 500ms; 
+         
+     }
+ 
+     &__toggle-label{
+         @include label;
+     }
+ 
+     &__logo-div{
+         width: 5rem;
+ 
+     
+     }
+     &__logo{
+         width: 100%;
+         padding-top: .2rem;
+     }
+     
+ }
+ 
+ 
+ .contact-nav{
+    @include nav-style;
+ 
+     
+ 
+     
+ 
+ }
+ 
+ .contact-nav__li{
+    @include nav-item-style;
+     
+ }
+ 
+ .contact-nav-li__a{
+     @include nav-link-style;
+     
+ }  
+ 
+ .contact-nav__li-drop{
+     
+     @include nav-drop-styles;
+     
+ 
+     .contact-nav-li-drop__a{
+ 
+         @include nav-link-style;
+     
+     }
+ }
+ 
+
+ .contact-social-icons{
+     padding: 1rem;
+     border: 1px solid rgba(0,0,0, .2);
+ 
+     .contact-social-icons__a {
+         color: inherit;
+ 
+         .fab {
+             opacity: .3;
+             margin-right: .5rem;  
+         }
+ 
+         .fas{
+             height: 3rem;
+             
+             
+         }
+         
+     }
+ }
+
+ .contact-wrapper{
+     display:flex;
+     flex-direction: column;
+     align-items: center;
+
+    &__h1{
+
+        padding: 4rem 1.5rem;
+        letter-spacing: 10px;
+        font-size: 2.5rem;
+        line-height: 1.5;
+        margin-right: 4rem;
+
+    }
+
+    .map-wrap{
+        width: 90%;
+        border: 1px solid black;
+
+        #map{
+            height: 250px;
+            width: 100%;
+        }
+    
+    }
+
+    .get-in-touch{
+        margin-top: 2rem;
+
+
+        & p{
+            margin: 0;
+        }
+
+
+        .contact-intro{
+
+            margin: 0 1.1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+
+            &__h6{
+
+                font-size: 1rem;
+                letter-spacing: 2px;
+
+
+            }
+
+            &__p{
+
+                width: 100%;
+                margin: 1rem 0;
+
+            }
+
+            &__p2{
+
+            }
+        }
+
+        .contact-steph{
+
+            @extend .contact-intro;
+            line-height: 2;
+
+            &__h6{
+                @extend .contact-intro__h6;
+                
+            }
+
+            &__p{
+
+            }
+
+           
+
+        }
+
+        .contact-matt{
+
+            @extend .contact-intro;
+            line-height: 2;
+
+            &__h6{
+                @extend .contact-intro__h6;
+
+            }
+
+            &__p{
+
+            }
+
+
+        }
+        
+       
+    }
+
+    .stanford-logo-contact{
+        width: 90%;
+
+        &__img{
+
+            width: 100%;
+
+        }
+    }
+
+    .contact-form{
+        @include form;
+
+        &__name{
+
+            
+        }
+    }
+
+
+
+ }
+
+
+
+
+
+
+
+
+
+
+.subject-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.subject-wrapper label{
+    color:rgba(0,0,0, .5);
+    letter-spacing: 2px;
+    padding: .5rem;
+}
+
+#subject{
+    padding: .5rem;
+    width: 92%;
+    align-self: center;
+    margin-right: .45rem;
+}
+
+.message-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding-left: .7rem;
+    margin-bottom: 2rem;
+
+}
+
+.message-wrapper label{
+    color:rgba(0,0,0, .5);
+    letter-spacing: 2px;
+    padding: .5rem 0;
+
+}

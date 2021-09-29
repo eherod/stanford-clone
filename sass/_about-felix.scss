@@ -13,15 +13,14 @@
 
     &__input{
         display: none;
-
-        
-        
+ 
     }
 
     &__input:checked ~ nav{
         transform: scale(1, 1);
        
     }
+    
 
     &__input:checked ~ nav li a{
         opacity: 1;

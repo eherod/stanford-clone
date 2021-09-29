@@ -148,3 +148,158 @@
     display: flex;
     flex-direction: column;
 }
+
+
+
+@mixin name-div{
+
+    display: flex;
+    flex-direction: column;
+ }
+
+@mixin name-label{
+
+    padding: .5rem 0 .5rem .6rem;
+    letter-spacing: 2px;
+    color: rgba(0,0,0, .5);
+
+}
+
+    
+
+    @mixin first-last-div{
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+    }
+
+
+
+     @mixin first-name-input{
+
+         width: 45%;
+         padding: .5rem;
+
+     }
+
+     @mixin last-name-input{
+         width: 45%;
+         padding: .5rem;
+
+     }
+
+     @mixin first-name-label{
+         font-size: .65rem;
+         letter-spacing: 2px;
+         padding-top: .5rem;
+         margin-right: 5.8rem;
+         color:rgba(0,0,0, .7);
+     }
+
+     @mixin last-name-label{
+         @include first-name-label;
+         
+     }
+
+
+    
+
+   @mixin email-div{
+
+     display: flex;
+     flex-direction: column;
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+     width: 100%;
+   }
+
+
+
+     @mixin email-label{
+
+         width: 92%;
+         align-self: center;
+         margin-right: 1.5rem;
+         padding: .5rem 0 .5rem .6rem;
+         letter-spacing: 2px;
+         color: rgba(0,0,0, .5);
+
+     }
+     @mixin email-input{
+         padding: .5rem;
+         width: 92%;
+         align-self: center;
+         margin-right: .45rem;
+
+     }
+    
+
+   @mixin phone-div{
+     display: flex;
+     flex-direction: column;
+   }
+
+
+     @mixin phone-label{
+
+         padding: .5rem 0 .5rem .6rem;
+         letter-spacing: 2px;
+         color: rgba(0,0,0, .5);
+
+
+     }
+
+     @mixin phone-input-div{
+         display: flex;
+         padding-left: .7rem;
+         grid-gap: 1rem;
+     }
+
+    @mixin phone-input{
+
+        width: 20%;
+        padding: .5rem;
+         
+    }
+        
+     
+     @mixin phone-hash-div{
+         padding-left: 1rem;
+         display: flex;
+         grid-gap: 3rem;
+         font-size: .85rem;
+         padding-top: .5rem;
+         opacity: .6;
+         margin-bottom: 2rem;
+
+     }
+
+    
+
+    @mixin button{
+     width: 40%;
+     padding: 1rem 2rem;
+     border-radius: 0;
+     color: white;
+     background-color: black;
+     border: none;
+     margin-left: .8rem;
+     margin-bottom: 3rem;
+     opacity: .8;
+
+    }
+
+     @mixin button-hover{
+
+         background-color: rgba(0,0,0, .8);
+         cursor: pointer;
+
+     }
+ 
+ 
+ 
+
+
+
+

@@ -188,7 +188,7 @@ body {
   top: 3rem;
   left: 0;
   width: 100%;
-  height: 120vh;
+  height: 100vh;
   background-color: #fff;
   transform: scale(1, 0);
   transform-origin: top;
@@ -858,7 +858,8 @@ body {
   flex-direction: column;
   font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
-  font-size: 1rem; }
+  font-size: 1rem;
+  overflow-x: hidden; }
 
 .concierge-hd {
   position: relative;
@@ -994,7 +995,13 @@ body {
     .concierge-wrapper .concierge-contact-form .concierge-form-first-last .first-last__last-name {
       width: 45%;
       padding: .5rem; }
-    .concierge-wrapper .concierge-contact-form .concierge-form-first-last .first-last__first-label, .concierge-wrapper .concierge-contact-form .concierge-form-first-last .first-last__last-label {
+    .concierge-wrapper .concierge-contact-form .concierge-form-first-last .first-last__first-label {
+      font-size: .65rem;
+      letter-spacing: 2px;
+      padding-top: .5rem;
+      margin-right: 5.8rem;
+      color: rgba(0, 0, 0, 0.7); }
+    .concierge-wrapper .concierge-contact-form .concierge-form-first-last .first-last__last-label {
       font-size: .65rem;
       letter-spacing: 2px;
       padding-top: .5rem;
@@ -1379,38 +1386,53 @@ body {
 .contact-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  overflow-x: hidden; }
   .contact-wrapper__h1 {
-    padding: 4rem 1.5rem;
-    letter-spacing: 10px;
-    font-size: 2.5rem;
+    padding: 2rem 0;
+    letter-spacing: .4rem;
+    font-size: 2rem;
     line-height: 1.5;
-    margin-right: 4rem; }
+    margin-right: 5.2rem; }
   .contact-wrapper .map-wrap {
-    width: 90%;
-    border: 1px solid black; }
+    width: 90%; }
     .contact-wrapper .map-wrap #map {
       height: 250px;
       width: 100%; }
   .contact-wrapper .get-in-touch {
     margin-top: 2rem; }
-    .contact-wrapper .get-in-touch p {
-      margin: 0; }
     .contact-wrapper .get-in-touch .contact-intro, .contact-wrapper .get-in-touch .contact-steph, .contact-wrapper .get-in-touch .contact-matt {
-      margin: 0 1.1rem;
+      margin: 0 0;
       display: flex;
       flex-direction: column;
       justify-content: flex-start; }
       .contact-wrapper .get-in-touch .contact-intro__h6, .contact-wrapper .get-in-touch .contact-steph__h6, .contact-wrapper .get-in-touch .contact-matt__h6 {
         font-size: 1rem;
-        letter-spacing: 2px; }
+        letter-spacing: .01rem;
+        margin-left: 1rem; }
       .contact-wrapper .get-in-touch .contact-intro__p {
         width: 100%;
-        margin: 1rem 0; }
-    .contact-wrapper .get-in-touch .contact-steph {
-      line-height: 2; }
+        margin: 1rem 1rem;
+        font-size: .8rem;
+        font-weight: normal; }
+      .contact-wrapper .get-in-touch .contact-intro__p-dash {
+        width: 100%;
+        margin: 0rem 1rem 1.5rem 1rem;
+        font-size: .8rem;
+        font-weight: normal; }
+    .contact-wrapper .get-in-touch .contact-steph, .contact-wrapper .get-in-touch .contact-matt {
+      line-height: 0;
+      margin-bottom: 2rem; }
+      .contact-wrapper .get-in-touch .contact-steph__h6, .contact-wrapper .get-in-touch .contact-matt__h6 {
+        margin-bottom: 1rem; }
+      .contact-wrapper .get-in-touch .contact-steph__p, .contact-wrapper .get-in-touch .contact-matt__p {
+        width: 100%;
+        margin-left: 1rem;
+        font-size: .8rem;
+        font-weight: normal;
+        line-height: 2; }
     .contact-wrapper .get-in-touch .contact-matt {
-      line-height: 2; }
+      margin-bottom: 1rem; }
   .contact-wrapper .stanford-logo-contact {
     width: 90%; }
     .contact-wrapper .stanford-logo-contact__img {
@@ -1418,6 +1440,70 @@ body {
   .contact-wrapper .contact-form {
     display: flex;
     flex-direction: column; }
+    .contact-wrapper .contact-form__name {
+      display: flex;
+      flex-direction: column; }
+      .contact-wrapper .contact-form__name-label {
+        padding: .5rem 0 .5rem .6rem;
+        letter-spacing: 2px;
+        color: rgba(0, 0, 0, 0.5); }
+    .contact-wrapper .contact-form .contact-form-first-last {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly; }
+      .contact-wrapper .contact-form .contact-form-first-last #first-name {
+        width: 45%;
+        padding: .5rem; }
+      .contact-wrapper .contact-form .contact-form-first-last #last-name {
+        width: 45%;
+        padding: .5rem; }
+      .contact-wrapper .contact-form .contact-form-first-last .contact-form__label-first {
+        font-size: .65rem;
+        letter-spacing: 2px;
+        padding-top: .5rem;
+        margin-right: 5.8rem;
+        color: rgba(0, 0, 0, 0.7); }
+      .contact-wrapper .contact-form .contact-form-first-last .contact-form__label-last {
+        font-size: .65rem;
+        letter-spacing: 2px;
+        padding-top: .5rem;
+        margin-right: 5.8rem;
+        color: rgba(0, 0, 0, 0.7); }
+    .contact-wrapper .contact-form .contact-form-email, .contact-wrapper .contact-form .contact-form-subject, .contact-wrapper .contact-form .contact-form-message {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      width: 100%; }
+      .contact-wrapper .contact-form .contact-form-email__label, .contact-wrapper .contact-form .contact-form-subject__label, .contact-wrapper .contact-form .contact-form-message__label {
+        width: 92%;
+        align-self: center;
+        margin-right: 1.5rem;
+        padding: .5rem 0 .5rem .6rem;
+        letter-spacing: 2px;
+        color: rgba(0, 0, 0, 0.5); }
+      .contact-wrapper .contact-form .contact-form-email #email, .contact-wrapper .contact-form .contact-form-subject #email, .contact-wrapper .contact-form .contact-form-message #email {
+        padding: .5rem;
+        width: 92%;
+        align-self: center;
+        margin-right: .45rem; }
+    .contact-wrapper .contact-form .contact-form-message #message {
+      width: 92%;
+      align-self: center; }
+    .contact-wrapper .contact-form button {
+      width: 40%;
+      padding: 1rem 2rem;
+      border-radius: 0;
+      color: white;
+      background-color: black;
+      border: none;
+      margin-left: .8rem;
+      margin-bottom: 3rem;
+      opacity: .8; }
+      .contact-wrapper .contact-form button:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+        cursor: pointer; }
 
 .subject-wrapper {
   display: flex;
@@ -1446,3 +1532,7 @@ body {
   color: rgba(0, 0, 0, 0.5);
   letter-spacing: 2px;
   padding: .5rem 0; }
+
+@media (min-width: 768px) {
+  .hm-hd {
+    display: none; } }

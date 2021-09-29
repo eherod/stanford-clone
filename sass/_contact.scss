@@ -1,9 +1,9 @@
 .contact-bd{
     @include about-body;
    
-
-}
-.contact-hd{
+ 
+ }
+ .contact-hd{
     @include about-header;
  
      &__input{
@@ -98,20 +98,22 @@
      display:flex;
      flex-direction: column;
      align-items: center;
+     overflow-x: hidden;
 
     &__h1{
 
-        padding: 4rem 1.5rem;
-        letter-spacing: 10px;
-        font-size: 2.5rem;
+        padding: 2rem 0;
+        letter-spacing: .4rem;
+        font-size: 2rem;
         line-height: 1.5;
-        margin-right: 4rem;
+        margin-right: 5.2rem;
+       
 
     }
 
     .map-wrap{
         width: 90%;
-        border: 1px solid black;
+        
 
         #map{
             height: 250px;
@@ -124,14 +126,12 @@
         margin-top: 2rem;
 
 
-        & p{
-            margin: 0;
-        }
+       
 
 
         .contact-intro{
 
-            margin: 0 1.1rem;
+            margin: 0 0;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -140,7 +140,8 @@
             &__h6{
 
                 font-size: 1rem;
-                letter-spacing: 2px;
+                letter-spacing: .01rem;
+                margin-left: 1rem;
 
 
             }
@@ -148,11 +149,17 @@
             &__p{
 
                 width: 100%;
-                margin: 1rem 0;
+                margin: 1rem 1rem;
+                font-size: .8rem;
+                font-weight: normal;
 
             }
 
-            &__p2{
+            &__p-dash{
+                width: 100%;
+                margin: 0rem 1rem 1.5rem 1rem;
+                font-size: .8rem;
+                font-weight: normal;
 
             }
         }
@@ -160,14 +167,25 @@
         .contact-steph{
 
             @extend .contact-intro;
-            line-height: 2;
+            line-height: 0;
+            margin-bottom: 2rem;
+            
 
             &__h6{
                 @extend .contact-intro__h6;
+                margin-bottom: 1rem;
+               
                 
             }
 
             &__p{
+                width: 100%;
+                margin-left: 1rem;
+                font-size: .8rem;
+                font-weight: normal;
+                line-height: 2;
+
+               
 
             }
 
@@ -177,15 +195,17 @@
 
         .contact-matt{
 
-            @extend .contact-intro;
-            line-height: 2;
+            @extend .contact-steph;
+            margin-bottom: 1rem;
+           
 
             &__h6{
-                @extend .contact-intro__h6;
+                @extend .contact-steph__h6;
 
             }
 
             &__p{
+                @extend .contact-steph__p;
 
             }
 
@@ -210,13 +230,101 @@
 
         &__name{
 
-            
+         @include name-div;
+
+         &-label{
+
+             @include name-label;
+
+         }
+
         }
-    }
+
+        .contact-form-first-last{
+            @include first-last-div;
+            
+
+            #first-name{
+
+               @include first-name-input;
+               
+              
+            }
+
+            #last-name{
+                @include last-name-input;
+            }
+
+            .contact-form__label-first{
+               @include first-name-label;
+            }
+
+            .contact-form__label-last{
+                @include last-name-label;
+                
+            }
+
+
+           }
+
+           .contact-form-email{
+
+            @include email-div;
+
+            &__label{
+
+                @include email-label;
+            }
+            #email{
+                @include email-input;
+
+            }
+           }
+
+           .contact-form-subject{
+               @extend .contact-form-email;
+
+               &__label{
+                   @extend .contact-form-email__label;
+               }
+           }
+
+           .contact-form-message{
+               @extend  .contact-form-subject;
+
+               &__label{
+                   @extend .contact-form-subject__label;
+               }
+
+               #message{
+                   width: 92%;
+                   align-self: center;
+                   
+               }
+
+           }
+
+           button{
+            @include button;
+
+            &:hover{
+
+                @include button-hover;
+
+            }
+        }
+
+           
+
+         
+
+           
+        
 
 
 
- }
+    }//contact form bracket
+ }//contact wrapper bracket 
 
 
 
@@ -227,36 +335,36 @@
 
 
 
-.subject-wrapper{
+ .subject-wrapper{
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
-}
-.subject-wrapper label{
+ }
+ .subject-wrapper label{
     color:rgba(0,0,0, .5);
     letter-spacing: 2px;
     padding: .5rem;
-}
+ }
 
-#subject{
+ #subject{
     padding: .5rem;
     width: 92%;
     align-self: center;
     margin-right: .45rem;
-}
+ }
 
-.message-wrapper{
+ .message-wrapper{
     display: flex;
     flex-direction: column;
     width: 95%;
     padding-left: .7rem;
     margin-bottom: 2rem;
 
-}
+ }
 
-.message-wrapper label{
+ .message-wrapper label{
     color:rgba(0,0,0, .5);
     letter-spacing: 2px;
     padding: .5rem 0;
 
-}
+ }
